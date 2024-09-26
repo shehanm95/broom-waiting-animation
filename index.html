@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="content">
+        <div class="waiting ">
+            <img class="broom b1 " src="images/broom1.png" alt="">
+            <img class="broom b2 " src="images/broom2.png" alt="">
+        </div>
+
+    </div>
+
+    <style>
+        .check {
+            border: 2px solid red;
+        }
+
+        .content {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .waiting {
+            position: relative;
+        }
+
+        .broom {
+            height: 100px;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .b1 {
+            animation: b1rotate 2s infinite alternate ease-in;
+            transform: rotate(30deg);
+        }
+
+        .b2 {
+            animation: b2rotate 2s infinite alternate ease-in;
+            transform: rotate(330deg);
+
+        }
+
+        @keyframes b1rotate {
+            0% {
+                transform: rotate(30deg);
+            }
+
+            90% {
+                transform: rotate(330deg);
+            }
+
+            100% {
+                transform: rotate(330deg);
+            }
+        }
+
+        @keyframes b2rotate {
+            0% {
+                transform: rotate(330deg);
+            }
+
+            90% {
+                transform: rotate(30deg);
+            }
+
+            100% {
+                transform: rotate(30deg);
+            }
+        }
+
+
+
+        body {
+            height: 95vh;
+            width: 95vw;
+        }
+    </style>
+</body>
+
+</html>
